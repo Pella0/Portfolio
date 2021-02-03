@@ -5,6 +5,7 @@ import { Router } from 'react-router';
 import Navbar from './Navbar';
 import history from '../history';
 import Projets from './Projets';
+import ProjetsLien from './ProjetsLien';
 
 const App = () => {
   return (
@@ -13,9 +14,8 @@ const App = () => {
         <Navbar />
         <div className="App">
           <Switch>
-            <Route exact path="/" />
-            <Route exact path="/projets" component={Projets} />
-            <Route exact path="/projets/:id" /* component={ProjetsDetails} */ />
+            <Route exact path="/" component={ProjetsLien} />
+            <Route exact path="/projets/:id" component={Projets} />
           </Switch>
         </div>
       </Router>

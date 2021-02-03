@@ -1,15 +1,17 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Projets = () => {
+const Projets = (props) => {
   // console.log(props.match.params);
-  const URL = 'http://localhost:5000';
-
+  /* const URL = 'http://localhost:5000';
+   */
   const [projets, setProjets] = useState([]);
+  const data = props.match.params;
 
   useEffect(() => {
     axios
-      .get(`${URL}/projets/1`)
+      .get(`http://localhost:5000/projets/${data.id}`)
       .then((reponse) => {
         console.log(reponse);
         setProjets(reponse.data);

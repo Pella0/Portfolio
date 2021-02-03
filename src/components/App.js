@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-/* import Navbar from './Navbar'; */
 import { Switch, Route } from 'react-router-dom';
 import { Router } from 'react-router';
+import Navbar from './Navbar';
+import history from '../history';
 
 const App = () => {
   return (
     <div className="global-page">
-      <Router>
-        {/* <Navbar /> */}
+      <Router history={history}>
+        <Navbar />
         <div className="App">
           <Switch>
             <Route exact path="/" />

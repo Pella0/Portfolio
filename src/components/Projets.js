@@ -20,6 +20,10 @@ const Projets = () => {
   return (
     <div>
       <p>{projets.Name}</p>
+      <p>{projets.Projet_Description}</p>
+      <p>{projets.Methode}</p>
+      <p>{projets.Lien_Client}</p>
+      <img className="logo" src={projets.Logo} alt="logo" />
     </div>
   );
 };

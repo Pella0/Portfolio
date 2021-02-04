@@ -70,13 +70,23 @@ export default function Admin() {
 
         <input name="Techno_id" ref={register} placeholder="techno" />
         <input name="Client_name" ref={register} placeholder="Nom Client" />
+        <input name="screen1" ref={register} placeholder="screen projet" />
+        <input name="screen2" ref={register} placeholder="screen projet" />
+        <input name="screen3" ref={register} placeholder="screen projet" />
+        <input name="screen4" ref={register} placeholder="screen projet" />
+        <input name="date" ref={register} placeholder="date" />
+        <input
+          name="projet_context"
+          ref={register}
+          placeholder="projet_context"
+        />
         <input type="submit" />
       </form>
 
       <div>
         {projets.map((proj) => (
           <div>
-            <p key={proj.id}>{proj.Name}</p>
+            <p key={proj.id}>{proj.title}</p>
             <button type="button" onClick={() => onDelete(proj.id)}>
               x
             </button>

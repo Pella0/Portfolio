@@ -1,10 +1,11 @@
-import React /* , { useEffect } */ from 'react';
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Projets from './Projets';
 import ProjetsLien from './ProjetsLien';
 import Admin from './Admin';
+import Home from './Home';
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Navbar />
         <div className="App">
           <Switch>
-            <Route exact path="/" />
+            <Route exact path="/" component={Home} />
             <Route exact path="/projets" component={ProjetsLien} />
             <Route exact path="/projets/:id" component={Projets} />
             <Route exact path="/admin" component={Admin} />

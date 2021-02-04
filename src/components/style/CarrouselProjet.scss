@@ -1,0 +1,15 @@
+.CarrouselClient {
+  height: 20vh;
+  .carousel .slide img {
+    width: 30vw;
+    height: 30vh;
+  }
+  .carousel .slide {
+    width: 50vw;
+    height: 30vh;
+    background-color: white;
+  }
+  .carousel-slider {
+    height: 40vh;
+  }
+}

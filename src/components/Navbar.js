@@ -2,7 +2,6 @@
 import React from 'react';
 import './style/Navbars.scss';
 import { Link } from 'react-router-dom';
-import { withRouter } from 'react-router';
 /* import history from '../history'; */
 
 const Navbar = () => {
@@ -20,4 +19,4 @@ const Navbar = () => {
   );
 };
 
-export default withRouter(Navbar);
+export default Navbar;

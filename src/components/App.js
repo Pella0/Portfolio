@@ -1,21 +1,22 @@
 import React /* , { useEffect } */ from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
-import { Router } from 'react-router';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import history from '../history';
 import Projets from './Projets';
 import ProjetsLien from './ProjetsLien';
+import Admin from './Admin';
 
 const App = () => {
   return (
     <div className="global-page">
-      <Router history={history}>
+      <Router>
         <Navbar />
         <div className="App">
           <Switch>
-            <Route exact path="/" component={ProjetsLien} />
+            <Route exact path="/" />
+            <Route exact path="/projets" component={ProjetsLien} />
             <Route exact path="/projets/:id" component={Projets} />
+            <Route exact path="/admin" component={Admin} />
           </Switch>
         </div>
       </Router>

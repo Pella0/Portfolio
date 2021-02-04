@@ -1,0 +1,45 @@
+.projet-infos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  .logo-Wild-Clash {
+    width: 30vw;
+    height: 30vw;
+  }
+  .logo-Ouf {
+    width: 70vw;
+    height: 30vw;
+  }
+  .Client {
+    width: 15vw;
+    height: 5w;
+    margin-top: 10px;
+  }
+  p {
+    font-size: 15px;
+    margin: 5px;
+  }
+}
+.CarrouselClient {
+  height: 20vh;
+  .carousel-root {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .carousel .slide img {
+    /* width: 30vw;
+    height: 30vh; */
+  }
+  .carousel .slide {
+    /* width: 50vw;
+    height: 30vh; */
+    background-color: white;
+  }
+  .carousel-slider {
+    /* height: 40vh; */
+  }
+}

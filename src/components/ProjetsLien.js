@@ -36,7 +36,7 @@ const ProjetsLien = () => {
               </div>
 
               <div className="card-excerpt">
-                <p>Client : {e.projet_context}</p>
+                <p>Contexte : {e.projet_context}</p>
               </div>
             </div>
           </Link>

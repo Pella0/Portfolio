@@ -48,7 +48,7 @@ export default function Admin() {
   return (
     <div className="administration">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input name="Name" ref={register} placeholder="Name" />
+        <input name="title" ref={register} placeholder="title" />
         <input name="Logo" ref={register} placeholder="Logo" />
         <input
           name="Client_Description"

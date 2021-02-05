@@ -1,6 +1,11 @@
 .administration {
   padding-top: 10px;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 .addProject {
   margin: 10px;

@@ -40,7 +40,7 @@ const Projets = (props) => {
           <Link className="Link" to={projets.Lien_Client}>
             <div className="Client" alt="client" />
           </Link>
-          <p>Techno utilisé {projets.Name}</p>
+          <p>Techno utilisé : {projets.Name}</p>
           <img className="Thechno" src={techMedium} alt="client" />
         </div>
       </div>

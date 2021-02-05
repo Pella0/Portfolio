@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './style/Projet.scss';
 import { Carousel } from 'react-responsive-carousel';
-
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import techMedium from './images/techMedium.png';
 
 const Projets = (props) => {
   // console.log(props.match.params);
@@ -36,9 +37,11 @@ const Projets = (props) => {
           <p>{projets.Projet_Description}</p>
           <p>Methode : {projets.Methode}</p>
           <p>{projets.Details_Client}</p>
-          <img className="Client" src={projets.Lien_Client} alt="client" />
+          <Link className="Link" to={projets.Lien_Client}>
+            <div className="Client" alt="client" />
+          </Link>
           <p>Techno utilisé {projets.Name}</p>
-          {/* <img className="Thechno" src={projets.Techno.name} alt="client" /> */}
+          <img className="Thechno" src={techMedium} alt="client" />
         </div>
       </div>
 

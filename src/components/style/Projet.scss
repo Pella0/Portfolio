@@ -11,7 +11,8 @@
   }
   .logo-Ouf {
     width: 70vw;
-    height: 30vw;
+    height: 20vw;
+    margin: 10vh;
   }
   .Client {
     width: 15vw;
@@ -23,6 +24,12 @@
     margin: 5px;
   }
 }
+
+.Thechno {
+  width: 30vw;
+  height: 20vh;
+}
+
 .CarrouselClient {
   height: 20vh;
   .carousel-root {
@@ -43,3 +50,13 @@
     /* height: 40vh; */
   }
 }
+
+/* .client {
+  background-image: url('../images/Julien2.png');
+  background-size: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36vw;
+  height: 10vh;
+  cursor: pointer;
+} */

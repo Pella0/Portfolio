@@ -17,7 +17,7 @@
 }
 .card:hover .card-image img {
   /*6*/
-  width: 160%;
+  width: 70%;
   filter: grayscale(0);
 }
 .card-image {
@@ -26,7 +26,7 @@
   overflow: hidden; /*3*/
 }
 .card-image img {
-  width: 80%; /*4*/
+  width: 50%; /*4*/
   /*5 - Méthode de centrage en fonction de la taille de l'image */
   position: absolute;
   top: 50%;
